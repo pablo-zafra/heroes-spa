@@ -5,7 +5,7 @@ export const HeroList = ( { publisher } ) => {
     const heroes = getHerosByPublisher( publisher );
 
     const heroList = heroes.map( h => {
-        return <li>{ h.superhero }</li>
+        return <li key={ h.id }>{ h.superhero }</li>
     })
 
     return (

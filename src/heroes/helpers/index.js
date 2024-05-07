@@ -1,1 +1,1 @@
-export * from '/getHerosByPublisher';
+export * from './getHerosByPublisher';
