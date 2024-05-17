@@ -37,6 +37,13 @@ export const Navbar = ( props ) => {
                     >
                         DC
                     </NavLink>
+
+                    <NavLink 
+                        className="nav-item nav-link" 
+                        to="/search"
+                    >
+                        Search
+                    </NavLink>
                 </div>
             </div>
 
