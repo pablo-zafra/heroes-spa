@@ -31,7 +31,7 @@ export const SearchPage = () => {
       <h1>Search</h1>
       <hr />
 
-      <div className="row">
+      <div className="row animate__animated animate__fadeInUp">
 
         <div className="col-5">
 
