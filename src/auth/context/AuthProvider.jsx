@@ -40,11 +40,12 @@ export const AuthProvider = ({ children }) => {
   const logout = () => {
 
     const action = {
-      types: types.logout,
+      type: types.logout,
     }
 
     localStorage.removeItem( 'user' );
 
+    dispatch(action);
   }
 
   return (
