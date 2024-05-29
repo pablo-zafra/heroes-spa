@@ -13,7 +13,9 @@ export const LoginPage = () => {
 
     login( 'empiryc' );
 
-    navigate('/.', {
+    const ultimaRuta = localStorage.getItem('ultimaRuta') || '/';
+
+    navigate( ultimaRuta, {
       replace: true
     });
   }

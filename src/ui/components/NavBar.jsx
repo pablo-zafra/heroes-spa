@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { Link, NavLink, useNavigate } from 'react-router-dom';
+import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../auth/context';
 
 
@@ -10,7 +10,12 @@ export const Navbar = ( ) => {
     const { user, logout } = useContext( AuthContext );
     // console.log( user );
 
+    const { pathname, search } = useLocation();
+
     const onLogout = () => {
+
+        const ultimaRuta = pathname + search;
+        localStorage.setItem('ultimaRuta', ultimaRuta);
 
         logout();
 
