@@ -29,7 +29,7 @@ describe('Pruebas en <PublicRoute />', () => {
 
         expect( screen.getByText('Ruta Pública') ).toBeTruthy();
         
-     })
+     });
 
      test('Debe de mostrar el children si está autenticado', () => {
 
@@ -64,5 +64,5 @@ describe('Pruebas en <PublicRoute />', () => {
 
         expect( screen.getByText('Ruta Privada') ).toBeTruthy();
         
-     })
+     });
 });

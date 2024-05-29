@@ -10,12 +10,7 @@ export const Navbar = ( ) => {
     const { user, logout } = useContext( AuthContext );
     // console.log( user );
 
-    const { pathname, search } = useLocation();
-
     const onLogout = () => {
-
-        const ultimaRuta = pathname + search;
-        localStorage.setItem('ultimaRuta', ultimaRuta);
 
         logout();
 
