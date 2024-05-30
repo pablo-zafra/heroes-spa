@@ -17,7 +17,7 @@ export const SearchPage = () => {
   // console.log ( q );
 
   const { formState, onInputChange, onResetForm, searchText } = useForm({
-    searchText: "",
+    searchText: q,
   });
 
   const onSearchSubmit = ( event ) => {
